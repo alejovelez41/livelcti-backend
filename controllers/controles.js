@@ -29,8 +29,7 @@ const getControleById = async (req, res) => {
         res.status(500).json({
             ok: false,
             msg: 'Unexpected error in GetById request'
-        })
-        
+        })        
     }
 }
 

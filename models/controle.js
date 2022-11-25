@@ -5,6 +5,9 @@ const ControleSchema = Schema({
     id:                   {
         type: String,
     },
+    nomControle:          {
+        type: String,
+    },    
     newControle:          {
         type: Boolean,
     },
