@@ -206,6 +206,9 @@ const IndividuSchema = Schema({
     totalSem:        {
         type: String,
     },
+    replique:        {
+        type: Object,
+    },
     idEnt:        {
         type: String,
     },
