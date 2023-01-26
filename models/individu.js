@@ -226,6 +226,9 @@ const IndividuSchema = Schema({
     },
     notesInd: {
         type: Array,
+    },
+    infos: {
+        type: Object,
     }
 });
 

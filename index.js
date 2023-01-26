@@ -26,6 +26,7 @@ dbConnection();
 app.use( '/controles', require('./routes/controles') );
 app.use( '/entreprises', require('./routes/entreprises') );
 app.use( '/individus', require('./routes/individus') );
+app.use( '/infos', require('./routes/infos') );
 
 //Other routes management
 app.get('*', (req, res) => {
