@@ -29,6 +29,9 @@ const ControleSchema = Schema({
     partenaires_controle: {
         type: Array,
     },
+    autre_partenaire:        {
+        type: String,
+    },
     entreprises_controle: {
         type: Array,
     },
