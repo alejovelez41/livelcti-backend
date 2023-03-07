@@ -47,6 +47,15 @@ const IndividuSchema = Schema({
     nir:        {
         type: String,
     },
+    type_statut:        {
+        type: String,
+    },
+    dt_creation:        {
+        type: String,
+    },
+    autre_statut:        {
+        type: String,
+    },
     siret:        {
         type: String,
     },
@@ -71,25 +80,25 @@ const IndividuSchema = Schema({
     tel:        {
         type: String,
     },
-    n_voie:        {
+    adresse_perso:        {
         type: String,
     },
-    bis:        {
+    cp_perso:        {
         type: String,
     },
-    libelle:        {
+    ville_perso:        {
         type: String,
     },
-    complement:        {
+    difference_adresse:        {
+        type: Boolean,
+    },
+    adresse_pro:        {
         type: String,
     },
-    cp:        {
+    cp_pro:        {
         type: String,
     },
-    ville:        {
-        type: String,
-    },
-    autre_statut:        {
+    ville_pro:        {
         type: String,
     },
     emploi:        {
@@ -221,6 +230,19 @@ const IndividuSchema = Schema({
     adresse_siege:        {
         type: String,
     },
+    idEntPerso:        {
+        type: String,
+    },
+    denominationEntPerso:        {
+        type: String,
+    },
+    siren_fichePerso:        {
+        type: String,
+    },
+    adresse_siegePerso:        {
+        type: String,
+    },
+
     signature_cloture:        {
         type: String,
     },
