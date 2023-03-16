@@ -1,249 +1,255 @@
-const { Schema, model} =  require ('mongoose');
+const { Schema, model } = require('mongoose');
 
 const IndividuSchema = Schema({
 
-    id:                   {
+    id: {
         type: String,
     },
-    refus:                {
+    refus: {
         type: Boolean,
     },
-    consentement:         {
+    consentement: {
         type: Boolean,
     },
-    archived:             {
+    archived: {
         type: Boolean,
     },
-    date:                 {
+    date: {
         type: String,
     },
-    heure:                {
+    heure: {
         type: String,
     },
-    description:          {
+    description: {
         type: String,
     },
-    nom:        {
+    nom: {
         type: String,
     },
-    prenom:        {
+    prenom: {
         type: String,
     },
-    typePI:        {
+    typePI: {
         type: String,
     },
-    numeroPI:        {
+    numeroPI: {
         type: String,
     },
-    signature:        {
+    signature: {
         type: String,
     },
-    statut:        {
+    statut: {
         type: String,
     },
-    fonction:        {
+    fonction: {
         type: String,
     },
-    nir:        {
+    nir: {
         type: String,
     },
-    type_statut:        {
+    type_statut: {
         type: String,
     },
-    dt_creation:        {
+    dt_creation: {
         type: String,
     },
-    autre_statut:        {
+    autre_statut: {
         type: String,
     },
-    siret:        {
+    siret: {
         type: String,
     },
-    siren:        {
+    siren: {
         type: String,
     },
-    civilite:        {
+    civilite: {
         type: String,
     },
-    dt_naissance:        {
+    dt_naissance: {
         type: String,
     },
-    lieu_naissance:        {
+    lieu_naissance: {
         type: String,
     },
-    nationalite_fr:        {
+    nationalite_fr: {
         type: String,
     },
-    pays_naissance:        {
+    pays_naissance: {
         type: String,
     },
-    tel:        {
+    tel: {
         type: String,
     },
-    adresse_perso:        {
+    adresse_perso: {
         type: String,
     },
-    cp_perso:        {
+    cp_perso: {
         type: String,
     },
-    ville_perso:        {
+    ville_perso: {
         type: String,
     },
-    difference_adresse:        {
+    difference_adresse: {
         type: Boolean,
     },
-    adresse_pro:        {
+    adresse_pro: {
         type: String,
     },
-    cp_pro:        {
+    cp_pro: {
         type: String,
     },
-    ville_pro:        {
+    ville_pro: {
         type: String,
     },
-    emploi:        {
+    emploi: {
         type: String,
     },
-    contrat:        {
+    contrat: {
         type: String,
     },
-    interimaire:         {
+    interimaire: {
         type: Boolean,
     },
-    sirenI:        {
+    sirenI: {
         type: String,
     },
-    denominationI:        {
+    denominationI: {
         type: String,
     },
-    adresse_siegeI:        {
+    adresse_siegeI: {
         type: String,
     },
-    dt_embauche:        {
+    dt_embauche: {
         type: String,
     },
-    duree:        {
+    duree: {
         type: String,
     },
-    bullentins:        {
+    bullentins: {
         type: String,
     },
-    hsup:        {
+    hsup: {
         type: String,
     },
-    sbrut:        {
+    sbrut: {
         type: String,
     },
-    fsalaire:        {
+    fsalaire: {
         type: String,
     },
-    montant:        {
+    typeVersement: {
         type: String,
     },
-    remunere:        {
+    autreVersement: {
         type: String,
     },
-    ca:        {
+    montant: {
         type: String,
     },
-    rmensuelle:        {
+    remunere: {
         type: String,
     },
-    snombre:        {
+    ca: {
         type: String,
     },
-    total:        {
+    rmensuelle: {
         type: String,
     },
-    identites:        {
+    snombre: {
         type: String,
     },
-    soustraitant:        {
+    total: {
         type: String,
     },
-    identite_do:        {
+    identites: {
         type: String,
     },
-    s_partie_activite:        {
+    soustraitant: {
         type: String,
     },
-    id_soustraitants:        {
+    identite_do: {
         type: String,
     },
-    lundi:        {
+    s_partie_activite: {
+        type: String,
+    },
+    id_soustraitants: {
+        type: String,
+    },
+    lundi: {
         type: Object,
     },
-    mardi:        {
+    mardi: {
         type: Object,
     },
-    mercredi:        {
+    mercredi: {
         type: Object,
     },
-    jeudi:        {
+    jeudi: {
         type: Object,
     },
-    vendredi:        {
+    vendredi: {
         type: Object,
     },
-    samedi:        {
+    samedi: {
         type: Object,
     },
-    dimanche:        {
+    dimanche: {
         type: Object,
     },
-    lundiSup:        {
+    lundiSup: {
         type: Object,
     },
-    mardiSup:        {
+    mardiSup: {
         type: Object,
     },
-    mercrediSup:        {
+    mercrediSup: {
         type: Object,
     },
-    jeudiSup:        {
+    jeudiSup: {
         type: Object,
     },
-    vendrediSup:        {
+    vendrediSup: {
         type: Object,
     },
-    samediSup:        {
+    samediSup: {
         type: Object,
     },
-    dimancheSup:        {
+    dimancheSup: {
         type: Object,
     },
-    totalSem:        {
+    totalSem: {
         type: String,
     },
-    replique:        {
+    replique: {
         type: Object,
     },
-    idEnt:        {
+    idEnt: {
         type: String,
     },
-    denominationEnt:        {
+    denominationEnt: {
         type: String,
     },
-    siren_fiche:        {
+    siren_fiche: {
         type: String,
     },
-    adresse_siege:        {
+    adresse_siege: {
         type: String,
     },
-    idEntPerso:        {
+    idEntPerso: {
         type: String,
     },
-    denominationEntPerso:        {
+    denominationEntPerso: {
         type: String,
     },
-    siren_fichePerso:        {
+    siren_fichePerso: {
         type: String,
     },
-    adresse_siegePerso:        {
+    adresse_siegePerso: {
         type: String,
     },
 
-    signature_cloture:        {
+    signature_cloture: {
         type: String,
     },
     notesInd: {
@@ -254,9 +260,9 @@ const IndividuSchema = Schema({
     }
 });
 
-IndividuSchema.method('toJSON', function() {
+IndividuSchema.method('toJSON', function () {
     const { __v, _id, ...object } = this.toObject();
     object.id = _id;
     return object;
 })
-module.exports = model( 'Individu' , IndividuSchema);
+module.exports = model('Individu', IndividuSchema);
