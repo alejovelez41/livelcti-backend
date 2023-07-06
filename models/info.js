@@ -2,7 +2,34 @@ const { Schema, model} =  require ('mongoose');
 
 const InfoSchema = Schema({
     retour_systeme:                   {
-        type: Boolean,
+        type: String,
+    },
+    rei_siret:          {
+        type: String,
+    },
+    rei_lib_voie:                {
+        type: String,
+    },
+    rei_no_voie:                {
+        type: String,
+    },
+    rei_rep_voie:                {
+        type: String,
+    },
+    rei_typ_voie:                {
+        type: String,
+    },
+    rei_base_urssaf:        {
+        type: String,
+    },
+    rei_cp:        {
+        type: String,
+    },
+    rei_comune:        {
+        type: String,
+    },
+    rei_dt_fin:        {
+        type: String,
     },
     rei_siren:                   {
         type: String,
@@ -10,34 +37,10 @@ const InfoSchema = Schema({
     rei_denomination:                {
         type: String,
     },
-    rei_code_naf:         {
-        type: String,
-    },
     rei_dt_creation:             {
         type: String,
     },
     rei_dt_debut:                 {
-        type: String,
-    },
-    rei_voie:                {
-        type: String,
-    },
-    rei_siret:          {
-        type: String,
-    },
-    rei_urssaf:        {
-        type: String,
-    },
-    rei_cp:        {
-        type: String,
-    },
-    rei_cp_insee:        {
-        type: String,
-    },
-    rei_comune:        {
-        type: String,
-    },
-    rei_dt_fin:        {
         type: String,
     },
     rei_qualite_dir:        {
@@ -65,9 +68,6 @@ const InfoSchema = Schema({
         type: String,
     },
     //----------------------------------------------------------
-    dpae_siret:        {
-        type: String,
-    },
     dpae_nom:        {
         type: String,
     },
@@ -80,16 +80,13 @@ const InfoSchema = Schema({
     dpae_dt_emb:        {
         type: String,
     },
-    dpae_hr_emb:        {
-        type: String,
-    },
     dpae_dt_decl:        {
         type: String,
     },
-    dpae_hr_decl:        {
+    //---------------------------------------
+    nir:        {
         type: String,
     },
-    //---------------------------------------
     dsn_adresse:        {
         type: String,
     },
@@ -126,13 +123,7 @@ const InfoSchema = Schema({
     dsn_debut_contrat:        {
         type: String,
     },
-    dsn_nir:        {
-        type: String,
-    },
     //---------------------------------
-    obp7_num_compte:        {
-        type: String,
-    },
     obp7_to:        {
         type: String,
     },
@@ -140,23 +131,86 @@ const InfoSchema = Schema({
         type: String,
     },
     //--------------------------
-    caae_num_compte:        {
+    caae_periode_1:        {
         type: String,
     },
-    caae_periodes:        {
+    caae_periode_2:        {
         type: String,
     },
-    caae_ca:        {
+    caae_periode_3:        {
+        type: String,
+    },
+    caae_periode_4:        {
+        type: String,
+    },
+    caae_periode_5:        {
+        type: String,
+    },
+    caae_periode_6:        {
+        type: String,
+    },
+    caae_periode_7:        {
+        type: String,
+    },
+    caae_periode_8:        {
+        type: String,
+    },
+    caae_periode_9:        {
+        type: String,
+    },
+    caae_periode_10:        {
+        type: String,
+    },
+    caae_periode_11:        {
+        type: String,
+    },
+    caae_periode_12:        {
+        type: String,
+    },
+    caae_ca_1:        {
+        type: String,
+    },
+    caae_ca_2:        {
+        type: String,
+    },
+    caae_ca_3:        {
+        type: String,
+    },
+    caae_ca_4:        {
+        type: String,
+    },
+    caae_ca_5:        {
+        type: String,
+    },
+    caae_ca_6:        {
+        type: String,
+    },
+    caae_ca_7:        {
+        type: String,
+    },
+    caae_ca_8:        {
+        type: String,
+    },
+    caae_ca_9:        {
+        type: String,
+    },
+    caae_ca_10:        {
+        type: String,
+    },
+    caae_ca_11:        {
+        type: String,
+    },
+    caae_ca_12:        {
         type: String,
     },
     //----------------------------
     opc_num_intervention:        {
         type: String,
     },
-    opc_dt_creation:        {
+    opc_realisateur:        {
         type: String,
     },
-    opc_realisateur:        {
+    opc_dt_creation:        {
         type: String,
     },
     opc_action:        {

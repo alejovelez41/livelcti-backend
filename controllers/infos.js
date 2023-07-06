@@ -38,7 +38,7 @@ const getInfoByNir = async (req, res) => {
     const nir = req.params.nir
 
     try {
-        const info = await Info.findOne({dsn_nir: nir});
+        const info = await Info.findOne({nir: nir});
         if (!info) {
             return   res.status(404).json({
                 ok: false,
